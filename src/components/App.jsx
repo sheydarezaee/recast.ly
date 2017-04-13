@@ -6,6 +6,9 @@ var App = () => (
     </div>
     <div className="col-md-5">
       <VideoList/>
+       {props.videos.map(video => 
+      <VideoListEntry video={video} />
+    )}
     </div>
   </div>
 );
